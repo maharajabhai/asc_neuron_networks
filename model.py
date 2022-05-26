@@ -132,7 +132,7 @@ for j in range(nvess):
             vessels[j].vess(eps[j]/2).deriv.delta = pos[n][6]*sc/(pos[n][6]+pos[i][6])
             vessels[j].vess(eps[j]/2).deriv.deltab = pos[i][6]*sc/(pos[n][6]+pos[i][6])
 
-states_init = ox[ecs].states3d.copy()
+#states_init = ox[ecs].states3d.copy()
 
 t = h.Vector().record(h._ref_t)
 
