@@ -79,7 +79,7 @@ for j in range(nvess):
     vessels[j].vess.nseg = nseg[j]
     vessels[j].vess.diam = diam
 
-ecs = rxd.Extracellular(dim[0]-20, dim[1]-20, dim[2], dim[3]+20, dim[4]+20, dim[5], dx=3, 
+ecs = rxd.Extracellular(-30, -30, 0, 40, 60, 50, dx=3, 
                         volume_fraction=0.2,tortuosity=1.6)
 secs3d = [ecs]
 secs1d = [sec for sec in h.allsec() if sec not in secs3d]
